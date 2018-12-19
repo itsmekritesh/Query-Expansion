@@ -56,7 +56,7 @@ def tagger():
             #print(list_tagged)
             s=""
             for obj in list_tagged:
-                s += str + obj[0] + "_" + obj[1] + " "
+                s += obj[0] + "_" + obj[1] + " "
             with open("C:\\Users\\DELL\\Desktop\\Project\\New data\\paragraph_tagged.txt", 'a') as filehandle:
                 filehandle.write(s+"\n")
         
