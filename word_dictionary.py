@@ -8,9 +8,11 @@ while (True):
         word_dict[key]+=1
     else:
         word_dict[key]=1
-print (word_dict)        
+#sorting in reverse        
+word_dict1=sorted(word_dict.items(), key = lambda kv:(kv[1], kv[0]),reverse=True) 
+#print(sorted(word_dict.items(), key = lambda kv:(kv[1], kv[0])))       
 file1=open("C:\\Users\\Kritesh\\Desktop\\Project\\paragraph tagged\\word_dict.txt","w")
-for obj in word_dict:
-    file1.write(obj+str(word_dict[obj])+"\n")
+for obj in range(len(word_dict1)):
+    file1.write(str(word_dict1[obj][0])+str(word_dict1[obj][1])+"\n")
     
         
