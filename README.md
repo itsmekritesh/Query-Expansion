@@ -1,4 +1,4 @@
-# Query-Processing Minor Project
+# Query-Expansion Minor Project
 # NITP CSE 6th sem
 
 #step 1:
